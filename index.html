@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ презентации</title>
+</head>
+<body>
+    <h1>Заказ презентации</h1>
+    <form action="/submit_order" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="login">Ник в телеграм</label>
+        <input type="login" id="login" name="login" required><br><br>
+
+        <label for="description">Описание презентации:</label><br>
+        <p> укажите количество слайдов, и что вы хотите видеть в презентации </p>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Отправить заявку">
+    </form>
+</body>
+</html>
